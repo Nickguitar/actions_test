@@ -13,7 +13,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Prepend timestamp to filename
+    - name: Prepend current timestamp to filename
       run: |
         folder_path="files"
         current_timestamp=$(date +"%s")
@@ -36,3 +36,6 @@ jobs:
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: check file names
+      run: ls -la files
