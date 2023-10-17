@@ -1,4 +1,4 @@
-title = "Android logcat"
+title = "Android logcat."
 description = "Get adb logcat logs provided the application package name"
 tags = ["mobile", "android", "bash"]
 
