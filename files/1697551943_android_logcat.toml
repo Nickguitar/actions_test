@@ -4,7 +4,8 @@ tags = ["mobile", "android", "bash"]
 
 [[data]]
 description = "Usage: logcat com.example.app"
-language = "bash"
+language = "php"
 command = """function logcat(){
 	adb logcat | grep -F "`adb shell ps | grep $1  | tr -s [:space:] ' ' | cut -d' ' -f2`"
 }"""
+
