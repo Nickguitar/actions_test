@@ -2,8 +2,8 @@ name: testing
 
 on:
   push:
-    paths:
-      - 'blog-posts/**/*.md'
+    branches:
+      - main
 
 jobs:
   build:
